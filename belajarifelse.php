@@ -35,4 +35,28 @@ for($i = 1; $i <=20; $i++){
     } else {
         echo "gagal";
     }
+
+    echo "<br>";
+/**
+ * operator arimatika
+ * 
+ * + = tambah
+ * - = kurang
+ * * = kali
+ * / = bagi
+ * % = modulus (hasil sisa bagi)
+ */
+
+$value1 = 20;
+$value2 = 10;
+
+echo $value1 + $value2;
+echo "<br>";
+echo $value1 - $value2;
+echo "<br>";
+echo $value1 * $value2;
+echo "<br>";
+echo $value1 / $value2;
+echo "<br>";
+echo $value1 % $value2;
 ?>
