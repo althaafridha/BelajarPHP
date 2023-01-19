@@ -60,3 +60,35 @@ echo $value1 / $value2;
 echo "<br>";
 echo $value1 % $value2;
 ?>
+
+<!-- form handling PHP -->
+<form method="get" action="belajarifelse.php">
+    <label>Nama</label>
+    <input type="text" name="nama">
+    <br>
+    <label>Umur</label>
+    <input type="number" name="umur">
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+<?php
+/**
+ * form handling PHP
+ * 
+ * form handling adalah metode penanganan operasi data
+ * form handling ada 3 macam
+ *   1. GET
+ *   2. POST
+ *   3. REQUEST
+ * 
+ * $_GET = untuk pengambilan data
+ * $_POST = untuk pengiriman data
+ * $_REQUEST = untuk penampung data
+ */
+    // mengambil data dengan form handling GET
+    $nama = isset($_GET['nama']);
+    $umur = isset($_GET['umur']);
+
+    echo "nama saya $nama, umur saya $umur tahun";
+?>
