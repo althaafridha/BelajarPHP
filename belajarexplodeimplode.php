@@ -37,4 +37,9 @@
      $merge = array_merge($toyota, $honda);
 
      print_r($merge);
+
+     echo "<br>";
+     $hasil = implode(" ! ", $merge);
+
+     print_r($hasil);
 ?>
