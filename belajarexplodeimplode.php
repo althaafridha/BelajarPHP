@@ -25,4 +25,16 @@
     $implode = implode(" ", $explode);
     print_r($implode);
 
+    echo "<br>";
+    /**
+     * Array Merge
+     * Array Merge digunakan untuk menggabungkan 2 nilai variable array
+     */
+
+     $toyota = ["innova", "avanza", "fortuner"];
+     $honda = ["civic", "jazz", "hrv"];
+
+     $merge = array_merge($toyota, $honda);
+
+     print_r($merge);
 ?>
