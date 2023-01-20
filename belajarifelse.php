@@ -59,6 +59,44 @@ echo "<br>";
 echo $value1 / $value2;
 echo "<br>";
 echo $value1 % $value2;
+
+echo "<br>";
+
+// array
+// array adalah sebuah variable yang bisa menampung banyak data
+
+$buah = ["jeruk", "apel", "mangga", "anggur"];
+echo $buah[0]; // memanggil data array dimulai dari 0
+echo "<br>";
+foreach($buah as $b){
+    echo "$b <br>";
+};
+
+// array multidimensi
+$sayur = ["mentah" => ["bayam", "kangkung", "wortel"], "tomat", "jagung"];
+echo $sayur["mentah"][0]; //memanggil data array didalam array
+echo "<br>";
+echo $sayur[1]; // value "mentah" tidak dihitung
+
+echo "<br>";
+$handphone = [
+    "apple" => [
+        "12" => ["pro max", "pro"]
+    ],
+    "samsung" => [
+        "note",
+        "galaxy" => ["s16", "s17", "s18"],
+        "tablet",
+        "laptop"
+    ],
+    "xiomi" => [
+        "note 10 pro", "note 12 pro", "note 30 pro" 
+    ]
+    ];
+
+echo $handphone["apple"]["12"][0]. "<br>";
+echo $handphone["samsung"]["galaxy"][1]. "<br>";
+echo $handphone["xiomi"][2]. "<br>";
 ?>
 
 <!-- form handling PHP -->
